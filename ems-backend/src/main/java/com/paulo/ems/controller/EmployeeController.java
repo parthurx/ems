@@ -3,13 +3,15 @@ package com.paulo.ems.controller;
 import com.paulo.ems.dto.EmployeeDto;
 import com.paulo.ems.entity.Employee;
 import com.paulo.ems.service.EmployeeService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin("*")
+@AllArgsConstructor
 @RestController
 @RequestMapping("/api/employees")
 public class EmployeeController {
